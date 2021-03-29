@@ -1,5 +1,5 @@
 import pytest
-from pytest import assume
+
 
 #断言失败还能继续运行后面的代码pytest.assume的运用
 

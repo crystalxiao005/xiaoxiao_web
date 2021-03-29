@@ -21,8 +21,6 @@ def browser():
     driver.quit()
     '''
 # 下面的方式可以判断当前系统是windows还是linux
-
-
 @pytest.fixture(scope="session", name="driver")
 def browser():
     '''定义全局driver'''
@@ -31,7 +29,6 @@ def browser():
         # windows系统
         _driver = webdriver.Chrome()
         _driver.maximize_window()
-
     else:
         # linux启动
         chrome_options = Options()
